@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created by @author: Franklin on Tue Jun 20 19:24:39 2017
-Edited by @contributer: Rajan Bhave on Fri July 12 12:17:00 2019
+Created by @author: Franklin on Tue (20/06/2017 19:24:39)
+Edited by @contributer: Rajan Arun Bhave on Fri (12/07/2019 12:20:00)
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -47,11 +47,3 @@ dataset.describe()
 cormat = dataset.corr()
 f, ax = plt.subplots(figsize = (4,3))
 sns.heatmap(cormat, ax=ax)
-"""
-f, ax = plt.subplots(figsize = (4,3))
-cols = ['Country', 'Age', 'Salary']
-cm = np.corrcoef(dataset[cols].values.T)
-sns.heatmap(cm, cbar=True, annot =True, square = True, fmt = '.2f',annot_kws = {'size':15},
-            yticklabels=cols,xticklabels=cols)
-plt.show()
-"""
